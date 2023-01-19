@@ -22,6 +22,7 @@ form.addEventListener('submit', (e) => {
         const btnContainer = document.createElement('div'); 
         let btnViewDetail = document.createElement('button'); 
 
+
         card.classList.add('card');
         btnContainer.classList.add('btn-view-container');
         btnViewDetail.classList.add('btn-view-detail');

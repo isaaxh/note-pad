@@ -63,6 +63,7 @@ form .note-container {
 }
 
 .btn-container button {
+    opacity: 50%;
     background-color: var(--accent-color);
     color: white;
     width: 6rem;
@@ -71,6 +72,10 @@ form .note-container {
     border: none;
     box-shadow: var(--shadow);
 
+}
+
+.btn-container .btn-enabled {
+    opacity: 100%;
 }
 
 .btn-container button:hover {
