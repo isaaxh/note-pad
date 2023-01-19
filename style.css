@@ -4,6 +4,7 @@
     --view-btn-color: #2664f6;
     --hover-view-btn-color: #3e75f6;
     --shadow:0 0 20px rgb(0,0,0,0.15);
+    --red-color: #db4451;
 
 }
 
@@ -51,6 +52,10 @@ form .note-container {
 
 .note-container textarea {
     resize: vertical;
+}
+
+.error-message {
+    color: var(--red-color);
 }
 
 .btn-container button {
@@ -104,3 +109,4 @@ form .note-container {
 .btn-view-container button:hover {
     background-color: var(--hover-view-btn-color);
 }
+
