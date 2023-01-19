@@ -8,7 +8,6 @@ form.addEventListener('submit', (e) => {
     const errorElement = document.querySelector('.error-message');
     let messages = [];
 
-
     if (title === '' || title === null || 
     note === '' || note === null) {
         e.preventDefault();
@@ -26,6 +25,8 @@ form.addEventListener('submit', (e) => {
         card.classList.add('card');
         btnContainer.classList.add('btn-view-container');
         btnViewDetail.classList.add('btn-view-detail');
+
+        btnViewDetail.setAttribute('onclick', 'showModel(event)');
 
         newTitle.innerText = title;
         newNote.innerText = note;
@@ -47,7 +48,21 @@ form.addEventListener('submit', (e) => {
 
 
 function showModel(e){
+    const modelContainer = document.querySelector('.model-container');
+    const noteHeaderContainer = document.querySelector('.note-header');
+    const noteDetailContainer = document.querySelector('.note-detail');
     const noteDetail = e.target.parentNode.previousElementSibling;
+    const noteHeader = noteDetail.previousElementSibling;
 
-    console.log(noteDetail);
+    noteDetailContainer.innerText = noteDetail.innerText;
+    noteHeaderContainer.innerText = noteHeader.innerText;
+
+    modelContainer.style.opacity = '1';
+    modelContainer.style.pointerEvents = 'auto';
+}
+
+function closeModel(e) {    
+    const modelContainer = document.querySelector('.model-container');
+    modelContainer.style.opacity = '0';
+    modelContainer.style.pointerEvents = 'none';
 }

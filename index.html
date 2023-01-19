@@ -62,18 +62,20 @@
             id minima.
           </p>
           <div class="btn-view-container">
-            <button class="btn-view-detail">View Detail</button>
+            <button class="btn-view-detail" onclick="showModel(event)">
+              View Detail
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="model-container">
-      <div class="model">
+    <div class="model-container" onclick="closeModel(event)">
+      <div class="model" onclick="event.stopPropagation()">
         <div class="header">
-          <h1>Note</h1>
-          <span class="close-model">X</span>
+          <h1 class="note-header">Note</h1>
+          <span class="btn-close-model" onclick="closeModel(event)">X</span>
         </div>
-        <p>
+        <p class="note-detail">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ullam
           laboriosam sit? Veniam ea quos nostrum tenetur, animi laboriosam
           voluptates quae iure possimus sapiente repellat illum laborum nam a

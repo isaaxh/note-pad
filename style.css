@@ -109,6 +109,7 @@ form .note-container {
     border: none;
     background-color: var(--view-btn-color);
     color: white;
+    cursor: pointer;
 }
 
 .btn-view-container button:hover {
@@ -116,15 +117,16 @@ form .note-container {
 }
 
 .model-container {
-    
+    opacity: 0;
     background-color: rgba(0,0,0,0.5);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
 }
 
 .model {
@@ -139,7 +141,7 @@ form .note-container {
     justify-content: space-between;
 }
 
-.header .close-model {
+.header .btn-close-model {
     background-color: #dddddd;
     color: #4e4c4c;
     width: 1.5rem;
@@ -149,9 +151,10 @@ form .note-container {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 
-.header .close-model:hover {
+.header .btn-close-model:hover {
     background-color: #bdbaba;
 }
 
