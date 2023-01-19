@@ -71,7 +71,7 @@ form .note-container {
 .notes-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 50px;
 }
 
 .notes-container .card {
