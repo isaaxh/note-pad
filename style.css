@@ -1,0 +1,63 @@
+:root {
+    --accent-color: rgb(244, 151, 2);
+    --hover-color: rgb(246, 174, 57);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+body {
+    margin: 0% 20%;
+}
+
+form {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid #dddddd;
+}
+
+form * {
+    margin: 10px 5px;
+}
+
+form h1 {
+    font-size: 3em;
+}
+
+form p {
+    font-size: 1.3em;
+    color: var(--accent-color);
+}
+
+form .note-container {
+    display: flex;
+}
+
+.note-container textarea {
+    flex:1;
+    border: 2px solid #dddddd;
+    resize: vertical;
+    padding: 6px 12px;
+
+}
+
+.btn-container button {
+    background-color: var(--accent-color);
+    color: white;
+    width: 6rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-container button:hover {
+    background-color: var(--hover-color);
+}
