@@ -13,8 +13,30 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         messages.push("Please fill all fields");
     } else {
-        
+        e.preventDefault();
+        errorElement.innerText = '';
+        const notesContainer = document.querySelector('.notes-container');
+        const card = document.createElement('div');
+        let newTitle = document.createElement('h1'); 
+        let newNote = document.createElement('p');
+        const btnContainer = document.createElement('div'); 
+        let btnViewDetail = document.createElement('button'); 
+
+        card.classList.add('card');
+        btnContainer.classList.add('btn-view-container');
+        btnViewDetail.classList.add('btn-view-detail');
+
+        newTitle.innerText = title;
+        newNote.innerText = note;
+        btnViewDetail.innerText = 'View Detail';
+
+        btnContainer.appendChild(btnViewDetail);
+        card.appendChild(newTitle);
+        card.appendChild(newNote);
+        card.appendChild(btnContainer);
+        notesContainer.appendChild(card);
     }
+
 
     if(messages.length > 0) {
         e.preventDefault();
