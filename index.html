@@ -13,34 +13,55 @@
       <form action="/" href="#">
         <h1>Note Pad</h1>
         <p>Add A New Note:</p>
+        <div class="note-container title">
+          <label for="title" class="note-title-container"> Title: </label>
+          <input type="text" id="title" placeholder="Enter title" />
+        </div>
         <div class="note-container">
           <label for="note" class="note-input-container"> Note: </label>
-          <textarea type="text" id="note" rows="2" col="30"> </textarea>
+          <textarea
+            type="text"
+            id="note"
+            rows="2"
+            col="30"
+            placeholder="Enter your note here..."
+          >
+          </textarea>
         </div>
         <div class="btn-container">
           <button type="submit" class="btn-add-note">Add Note</button>
         </div>
       </form>
       <div class="notes-container">
-        <div class="notes">
-          <h1>note 1</h1>
+        <div class="card">
+          <h1>Note 1</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             deserunt quo eum obcaecati quos aperiam in. Quis libero ad quisquam
             sint reiciendis quibusdam a, ducimus officiis, praesentium numquam
-            id minima.
+            id minima. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam deserunt quo eum obcaecati quos aperiam in. Quis libero ad
+            quisquam sint reiciendis quibusdam a, ducimus officiis, praesentium
+            numquam id minima. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Numquam deserunt quo eum obcaecati quos aperiam
+            in. Quis libero ad quisquam sint reiciendis quibusdam a, ducimus
+            officiis, praesentium numquam id minima.
           </p>
-          <button class="btn-view-detail">View Detail</button>
+          <div class="btn-view-container">
+            <button class="btn-view-detail">View Detail</button>
+          </div>
         </div>
-        <div class="notes">
-          <h1>note 2</h1>
+        <div class="card">
+          <h1>Note 2</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             deserunt quo eum obcaecati quos aperiam in. Quis libero ad quisquam
             sint reiciendis quibusdam a, ducimus officiis, praesentium numquam
             id minima.
           </p>
-          <button class="btn-view-detail">View Detail</button>
+          <div class="btn-view-container">
+            <button class="btn-view-detail">View Detail</button>
+          </div>
         </div>
       </div>
     </div>

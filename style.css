@@ -1,6 +1,9 @@
 :root {
     --accent-color: rgb(244, 151, 2);
     --hover-color: rgb(246, 174, 57);
+    --view-btn-color: #2664f6;
+    --hover-view-btn-color: #3e75f6;
+    --shadow:0 0 20px rgb(0,0,0,0.15);
 
 }
 
@@ -21,7 +24,6 @@ body {
 form {
     text-align: center;
     padding: 30px;
-    border: 2px solid #dddddd;
 }
 
 form * {
@@ -41,12 +43,14 @@ form .note-container {
     display: flex;
 }
 
-.note-container textarea {
+.note-container textarea, .note-container input {
     flex:1;
     border: 2px solid #dddddd;
-    resize: vertical;
     padding: 6px 12px;
+}
 
+.note-container textarea {
+    resize: vertical;
 }
 
 .btn-container button {
@@ -56,8 +60,47 @@ form .note-container {
     padding: 6px 12px;
     border-radius: 6px;
     border: none;
+    box-shadow: var(--shadow);
+
 }
 
 .btn-container button:hover {
     background-color: var(--hover-color);
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.notes-container .card {
+    padding: 25px;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+
+.card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.notes-container .card * {
+    margin: 10px 0;
+}
+
+.btn-view-container button {
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--view-btn-color);
+    color: white;
+}
+
+.btn-view-container button:hover {
+    background-color: var(--hover-view-btn-color);
 }
