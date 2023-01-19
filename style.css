@@ -5,7 +5,6 @@
     --hover-view-btn-color: #3e75f6;
     --shadow:0 0 20px rgb(0,0,0,0.15);
     --red-color: #db4451;
-
 }
 
 * {
@@ -121,7 +120,7 @@ form .note-container {
     background-color: rgba(0,0,0,0.5);
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
