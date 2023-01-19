@@ -37,6 +37,9 @@ form.addEventListener('submit', (e) => {
         card.appendChild(newNote);
         card.appendChild(btnContainer);
         notesContainer.appendChild(card);
+
+        document.querySelector('#title').value = '';
+        document.querySelector('#note').value = '';
     }
 
 
