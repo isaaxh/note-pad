@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const btnAddNote = document.querySelector('.btn-add-note');
 
+
 form.addEventListener('submit', (e) => {
     const title = document.querySelector('#title').value;
     const note = document.querySelector('#note').value;
@@ -42,7 +43,11 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
     }
-
-    
-
 });
+
+
+function showModel(e){
+    const noteDetail = e.target.parentNode.previousElementSibling;
+
+    console.log(noteDetail);
+}

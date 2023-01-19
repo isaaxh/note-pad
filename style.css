@@ -19,7 +19,12 @@
 }
 
 body {
+    height: 100vh;
+}
+
+.container{
     margin: 0% 20%;
+
 }
 
 form {
@@ -109,4 +114,46 @@ form .note-container {
 .btn-view-container button:hover {
     background-color: var(--hover-view-btn-color);
 }
+
+.model-container {
+    
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model {
+    background-color: rgba(255, 255, 255, 1);
+    width: 40rem;
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+}
+
+.model .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .close-model {
+    background-color: #dddddd;
+    color: #4e4c4c;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .close-model:hover {
+    background-color: #bdbaba;
+}
+
+
 
